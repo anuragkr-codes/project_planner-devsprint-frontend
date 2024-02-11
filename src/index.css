@@ -25,7 +25,8 @@
 
 /*DARK MODE VARIABLES*/
 [data-theme="dark"]{
-  --text-500: #74BE8E;
+  --green-text-500: #A8D6B8;
+  --white-text-500: #E6EBE8;
   --background-500: #171717;
   --primary-500: #346847;
   --secondary-500: #44554B;
