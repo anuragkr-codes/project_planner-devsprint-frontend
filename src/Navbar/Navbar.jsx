@@ -3,7 +3,7 @@ import './navbar.css'
 import ToLightMode from '../assets/LightMode.svg'
 import ToDarkMode from '../assets/DarkMode.svg'
 
-function Navbar({ toggleAppearance, dataTheme }) {
+function Navbar({ handleAuthDisplay }) {
     return (
         <header>
             <div className='navbar'>
@@ -14,10 +14,7 @@ function Navbar({ toggleAppearance, dataTheme }) {
                     <h1 className='project-name'>Project Pilot</h1>
                 </div>
                 <div className='navbar-actions'>
-                    <div className='navbar-item'>SIGNUP</div>
-                    <button className='theme-switcher' onClick={toggleAppearance}>
-                        <img src={dataTheme == 'dark' ? ToLightMode : ToDarkMode} />
-                    </button>
+                    <div className='navbar-item' onClick={()=>handleAuthDisplay()}>LOGIN / SIGNUP</div>
                 </div>
             </div>
         </header>

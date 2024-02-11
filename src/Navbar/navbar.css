@@ -1,18 +1,18 @@
 header {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     z-index: 100;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 20rem;
 }
 
 .navbar {
-    --navbar-height: 7rem;
+    --navbar-height: 6.6rem;
 
     width: 80vw;
     height: var(--navbar-height);

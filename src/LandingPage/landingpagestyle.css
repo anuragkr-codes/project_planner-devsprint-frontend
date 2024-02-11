@@ -1,0 +1,51 @@
+.landing-main{
+    flex: 1;
+    width: 100vw;
+
+    display: flex;
+}
+
+.landing-right, .landing-left{
+    width: 50%;
+}
+
+.landing-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.landing-right{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    position: relative;
+}
+
+.landing-header{
+    font-size: 8rem;
+    color: white;
+}
+
+.landing-text{
+    width: 55rem;
+    font-size: 2.5rem;
+    margin-left: 5rem;
+
+    color: var(--accent-500);
+}
+
+.spline-container{
+    height: 30px;
+}
