@@ -3,7 +3,7 @@ import './navbar.css'
 import ToLightMode from '../assets/LightMode.svg'
 import ToDarkMode from '../assets/DarkMode.svg'
 
-function Navbar({ dataTheme, handleAuthDisplay }) {
+function Navbar({ handleAuthDisplay }) {
     return (
         <header>
             <div className='navbar'>
@@ -14,7 +14,7 @@ function Navbar({ dataTheme, handleAuthDisplay }) {
                     <h1 className='project-name'>Project Pilot</h1>
                 </div>
                 <div className='navbar-actions'>
-                    <div className='navbar-item' onClick={()=>handleAuthDisplay()}>SIGNUP</div>
+                    <div className='navbar-item' onClick={()=>handleAuthDisplay()}>LOGIN / SIGNUP</div>
                 </div>
             </div>
         </header>
