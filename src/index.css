@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
-*{
-  font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -15,35 +15,46 @@
 
 /*LIGHT MODE VARAIABLES*/
 :root {
-  --text-500: #418B5B;
+  --green-text-500: #a8d6b8;
+  --white-text-500: #e6ebe8;
+  --background-500: #171717;
+  --primary-500: #346847;
+  --secondary-500: #44554b;
+  --accent-500: #63be83;
+  /* --text-500: #418B5B;
   --background-500: #F4F4F4;
   --primary-500: #96CAA9;
   --secondary-500: #AABBB1;
-  --accent-500: #419B60;
-  --green: #74BE8E;
+  --accent-500: #419B60; */
+  --green: #74be8e;
 }
 
 /*DARK MODE VARIABLES*/
-[data-theme="dark"]{
-  --green-text-500: #A8D6B8;
-  --white-text-500: #E6EBE8;
+[data-theme="dark"] {
+  --green-text-500: #a8d6b8;
+  --white-text-500: #e6ebe8;
   --background-500: #171717;
   --primary-500: #346847;
-  --secondary-500: #44554B;
-  --accent-500: #63BE83;
+  --secondary-500: #44554b;
+  --accent-500: #63be83;
 }
 
-html{
-  font-size: 62.5%;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-h1{
+h1 {
   font-weight: 600;
 }

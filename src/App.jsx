@@ -1,22 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './Navbar/Navbar';
-import AuthComponent from './AuthComponent/AuthComponent';
+import "./App.css";
+import Dashboard from "./Dashboard/Dashboard";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./LandingPage/LandingPage";
 
 function App() {
-  const [dataTheme, setDataTheme] = useState("dark");
-
-  const toggleAppearance = () => {
-    setDataTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-  }
-
   return (
-    <div id='app' data-theme={dataTheme}>
-      <Navbar toggleAppearance={toggleAppearance} dataTheme={dataTheme} />
-      <AuthComponent />
-      <div style={{height: '200vh', color: 'white'}}>Test Text</div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
