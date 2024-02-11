@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './Navbar/Navbar';
 
 function App() {
   const [dataTheme, setDataTheme] = useState("dark");
@@ -10,7 +11,8 @@ function App() {
 
   return (
     <div id='app' data-theme={dataTheme}>
-      <button onClick={toggleAppearance}>CHANGE</button>
+      <Navbar toggleAppearance={toggleAppearance} dataTheme={dataTheme} />
+      <div style={{height: '200vh', color: 'white'}}>Test Text</div>
     </div>
   )
 }
