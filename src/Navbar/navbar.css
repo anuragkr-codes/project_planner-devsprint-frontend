@@ -8,11 +8,11 @@ header {
     align-items: center;
     justify-content: center;
 
-    height: 20rem;
+    height: 15rem;
 }
 
 .navbar {
-    --navbar-height: 7rem;
+    --navbar-height: 6.6rem;
 
     width: 80vw;
     height: var(--navbar-height);
